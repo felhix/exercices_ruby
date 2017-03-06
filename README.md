@@ -24,7 +24,7 @@ To work through the first exercise, follow this process
         undefined local variable or method `hello' for #<RSpec::ExampleGroups::TheHelloFunction:0x007fa1221408f0>
         # ./00_hello/hello_spec.rb:106:in `block (2 levels) in <top (required)>'
   ```
-3. If the test fails to run and your get a `rake aborted! No Rakefile found` or any other error message not like the one above ensure that your working directory (`pwd` to see the path) contains no spaces as this is a common mistake made by people new to Rspec.
+3. If the test fails to run and you get a `rake aborted! No Rakefile found` or any other error message not like the one above ensure that your working directory (`pwd` to see the path) contains no spaces as this is a common mistake made by people new to Rspec.
 3. Read the failure output carefully and write the code that will make it pass
 4. Run the tests again with `rake`
 5. This will output that one test has passed and another test failure, write the code to make the next test pass.
