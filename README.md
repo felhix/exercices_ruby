@@ -18,6 +18,7 @@ Pour chaque exercice, tu devras créer un programme Ruby, et l'exécuter pour le
 3. Change le programme précédent pour faire en sorte que le programme ne dise bonjour qu'aux personnes qui s'appellent Alice, ou Bob
 4. Écris un programme qui demande un nombre à l'utilisateur, et qui va afficher son carré
 5. Écris un programme qui demande un nombre à l'utilisateur, et qui va faire l'addition de tous les nombres jusqu'à ce nombre
+
   - Ex : si on rentre `5` dans le programme, ce dernier devra donner l'addition des nombre de 1 à 5, soit `1 + 2 + 3 + 4 + 5`
 6. Modifie le programme précédent pour que le programme ne fasse l'addition QUE des multiples de 3 ou 5
   - Ex : si on rentre `15` dans le programme, ce dernier devra donner l'addition des multiples de 3 ou 5 jusqu'à 15, soit `3 + 5 + 9 + 10 + 12 + 15`.
