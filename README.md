@@ -13,28 +13,42 @@ Pour chaque exercice, tu devras créer un programme Ruby, et l'exécuter pour le
 
 ## 3. Les exercices
 
-1. Écris un programme qui affiche `Bonjour monde !` à l'écran
-2. Écris un programme qui demande à l'utilisateur son prénom, et qui lui dit bonjour, avec son prénom
-3. Change le programme précédent pour faire en sorte que le programme ne dise bonjour qu'aux personnes qui s'appellent Alice, ou Bob
-4. Écris un programme qui demande un nombre à l'utilisateur, et qui va afficher son carré
-5. Écris un programme qui demande un nombre à l'utilisateur, et qui va faire l'addition de tous les nombres jusqu'à ce nombre
-
-    * Ex : si on rentre `5` dans le programme, ce dernier devra donner l'addition des nombre de 1 à 5, soit `1 + 2 + 3 + 4 + 5`
-
-6. Modifie le programme précédent pour que le programme ne fasse l'addition QUE des multiples de 3 ou 5
-    * Ex : si on rentre `15` dans le programme, ce dernier devra donner l'addition des multiples de 3 ou 5 jusqu'à 15, soit `3 + 5 + 9 + 10 + 12 + 15`.
-
-7. Écris un programme qui demande un nombre à l'utilisateur, et qui lui donne la possibilité de sortir la somme des nombres de 1 au nombre choisi, ou le produit des nombres de 1 au nombre choisi
-    * Ex : si on rentre `5` dans le programme, ce dernier demandera à l'utilisateur s'il préfére obtenir la somme des nombres de 1 à 5, soit `1 + 2 + 3 + 4 + 5`, ou le produit des nombres de 1 à 5, soit `1 x 2 x 3 x 4 x 5`
-
-8. Écris un programme qui va reproduire la pyramide de Mario : le programme demandera à l'utilisateur la taille de la pyramide, puis il devra afficher une pyramide avec des `#` en guise de blocs. Les blocs devront être en bas à gauche
-    * Ex : le programme devra faire comme [celui-ci](http://www.korenlc.com/mario-pyramid-in-c/) (en Ruby, bien entendu 😉)
-
-9. Écris un programme qui affiche [une table de multiplication de 1 à 10](http://ekladata.com/02pAsqn3cSH1kWsv4qb1DLASXAY.jpg)
-10. Écris un programme qui affiche tous les nombres premiers de 1 à 100
-11. Écris un programme qui demande un nombre à l'utilisateur, et qui va afficher tous les nombres premiers jusqu'au nombre choisi par l'utilisateur
-12. Écris un un programme où l'ordinateur va réfléchir aléatoirement à un nombre entre 1 et 20, puis demander à l'utilisateur de deviner le nombre. L'utilisateur rentre un nombre, et l'ordinateur lui dira si le nombre rentré est le bon, ou bien s'il est trop grand, ou bien s'il est trop petit
-13. Change le programme ci-haut pour faire en sorte que l'utilisateur continuer à essayer de trouver le nombre, tant qu'il ne l'a pas trouvé
-14. Écris un programme qui va afficher les 20 prochaines années bissextiles
-15. Écris un programme qui traduis de l'anglais au code morse, et vice-versa
-16. Écris un programme qui demande un string à l'utilisateur, et qui retourne si le string est un palindrome ou non
+1 . Crée une fonction qui prend un integer comme argument et qui renvoie "pair" pour les nombres pairs et "impairs" pour les nombres impairs.
+2 . Crée un array, et renvoie la somme de tous les nombres positifs.
+*Par exemple :  `[1,-4,7,12]` => `1 + 7 + 12 = 20`*
+Si il n'y a rien à additionner, la somme est 0 ;)
+3 . On te donne un nombre, trouve l'opposé. Facile, non ? Essaye de le faire en 1 ligne et sans conditions ;)
+**Par exemple  :* `1 => -1` `-34 => 34`**
+4 . Écris une fonction `reapeatStr` qui répète la chaine de caractères en argument exactement `n`fois.
+*Par exemple :  `repeatStr(5,"thp") ==> "thpthpthpthpthp"`*
+5 . Crée une fonction qui enlève la première et dernière lettre d'une chaîne de caractères. Un seul paramètre, la CDC originale.
+6 . Crée une fonction qui retourne le plus petit integer d'un array. 
+*Par exemple :* 
+-  *Avec  `[34, 15, 88, 2]`  ta fonction renvoie  `2`*
+-  *Avec  `[34, -345, -1, 100]`  ta fonction renvoie  `-345`*
+7 . Imagine que tu as une array de mouton. Certains de ces moutons manquent. Créer une fonction qui compte le nombre de moutons présent dans l'array (true = présent).
+*Par exemple : 
+[true, true, true, false, true, true, true, true , true, false, true, false, true, false, false, true , true, true, true, true , false, false, true, true] renvoie 17.*
+8 . Additionne tous les nombres d'une array... Sauf le plus petit et le plus gros nombre.
+*Par exemple : `{ 6, 2, 1, 8, 10 } => 16`  & `{ 1, 1, 11, 2, 3 } => 6`*
+9 . Facile. Enlève les espace d'une chaîne de caractères, et renvoie le résultat.
+10 . Yes, t'es au dixième exo ! Voici un truc un peu plus challengeant : 
+Renvoie un array, dans lequel le premier élément est la somme des nombres positifs, et le deuxième la somme des nombres négatifs.
+Par exemple : 
+*Cet array :  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15] 
+Renvoie :  [10, -65]*
+11 . Écris une fonction `summation` qui renvoie l'addition de chaque nombre entre 1 et le nombre rentré en paramètre. Le nombre donné sera toujours positif et supérieur à 0.
+*Par exemple :* 
+`summation(2) -> 3` 
+*renvoie* `1 + 2`
+ `summation(8) -> 36`
+*renvoie*  ` 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8`
+12 . Inverse chaque nombre de l'array en paramètre d'une fonction `inverse`. Chaque positif deviens négatif, et inversement 
+*Par exemple : `invert([1,-2,3,-4,5]) == [-1,2,-3,4,-5]`*
+13 . Crée une fonction `rps`. Les règles sont les suivantes : `Scissors` bat `Paper`, `Paper` bat `Rock`, et `Rock` bat `Scissors`
+*Par exemple : 
+rps('scissors','paper') // Joueur 1 gagne ! rps('scissors','rock') // Joueur 2 gagne ! rps('paper','paper') // Egalité !*
+14 . Crée une fonction qui transforme un nombre en chaîne de caractères.
+*Par exemple : `number-to-string 123 ;; renvoie '123'`*
+15 . Créé une fonction qui répète chaque lettre de la chaîne de caractère en argument.
+*Par exemple : `double_char("String") ==> "SSttrriinngg" `*
