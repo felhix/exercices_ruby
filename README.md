@@ -47,7 +47,7 @@ Si il n'y a rien à additionner, la somme est 0 ;)
 Renvoie un array, dans lequel le premier élément est la somme des nombres positifs, et le deuxième la somme des nombres négatifs.
 Par exemple : 
 *Cet array :  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15] 
-Renvoie :  [10, -65]*
+Renvoie :  [55, -65]*
 
 11 . Écris une fonction `summation` qui renvoie l'addition de chaque nombre entre 1 et le nombre rentré en paramètre. Le nombre donné sera toujours positif et supérieur à 0.
 *Par exemple :* 
